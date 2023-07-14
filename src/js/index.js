@@ -95,6 +95,7 @@ const observer = new IntersectionObserver(handlePagination, options);
 const onFormSubmit = (e) => {
     e.preventDefault();
     gallery.innerHTML = '';
+    page =1;
     searchValue = e.target[0].value;
     makeMarkup(searchValue, 1)
         .then(data => {
@@ -106,7 +107,7 @@ const onFormSubmit = (e) => {
             }
         });
     form.reset();
-}
+};
 
 const loadNextCollection = async () => {
      
