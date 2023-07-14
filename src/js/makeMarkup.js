@@ -1,15 +1,19 @@
 import Notiflix from 'notiflix';
 import { fethImgs } from './imgApi';
 
+
+
+
 export const makeMarkup = async (searchValue) => {
     
     try {
-        const responce = await fethImgs(searchValue)
+        const responce = await fethImgs(searchValue, 1)
             // .then( responce => console.log('qqqq', responce))  
         // console.log('responce', responce);
         // console.log('responce.data', responce.data);
 
         if (responce.data.hits.length !==0) {
+            
             return responce.data.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) =>
                 `<li>
                     <img
@@ -43,15 +47,4 @@ export const makeMarkup = async (searchValue) => {
     }
 } 
 
-
-const options = {
-    root: null,
-    rootMargin: '300px',
-    threshold: 0,
-}
  
-// const observer = new IntersectionObserver(handlePagination, options);
-
-// const handlePagination = () => {
-    
-// }
