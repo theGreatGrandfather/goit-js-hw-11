@@ -12,8 +12,10 @@ export const makeMarkup = async (searchValue) => {
         // console.log('responce', responce);
         // console.log('responce.data', responce.data);
 
-        if (responce.data.hits.length !==0) {
-            
+        if (responce.data.hits.length !== 0) {
+ responce.data.total
+            console.log('total', responce.data.total);
+            Notiflix.Notify.success(`Hooray! We found ${responce.data.total} images.`);
             return responce.data.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) =>
                 `<li class="photo-card _list">
                     <img

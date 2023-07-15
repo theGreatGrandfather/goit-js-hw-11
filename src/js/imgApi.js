@@ -6,7 +6,7 @@ const GET_PARAMETRS = '&image_type=photo&orientation=horizontal&safesearch=true'
 import { gallery, page, searchValue } from './index';
 // let page = 1;
    
-const per_page = 35;
+const per_page = 40;
 
 export const fethImgs = async (searchValue, page) => {
     const responce = await axios.get(`
