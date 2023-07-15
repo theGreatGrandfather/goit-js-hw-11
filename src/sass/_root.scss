@@ -1,0 +1,20 @@
+$primery-text-color: #555555;
+$primery-bgc:#F1F6FE;
+
+$color_white: #ffffff;
+$color_accent: #275eb6;
+$transition__stock: all 300ms linear;
+
+
+$primery_font:'Fira Sans', sans-serif;
+$secondury_font: 'Lato', sans-serif;
+;
+
+body {
+font-family: $primery_font;
+background-color: $primery-bgc;
+}
+// * {
+// outline: 1px solid red;
+// }
+

@@ -15,8 +15,9 @@ export const makeMarkup = async (searchValue) => {
         if (responce.data.hits.length !==0) {
             
             return responce.data.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) =>
-                `<li>
+                `<li class="photo-card _list">
                     <img
+                        class="search__img"
                         src=${webformatURL} 
                         alt="${tags}" 
                         loading="lazy" 

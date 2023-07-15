@@ -9,32 +9,32 @@
   <link href="
         https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css
       " rel="stylesheet">
-  <!-- <link href="
-      https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css
-      " rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;900&family=Lato&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <!-- ❗️❗️❗️ Add partials like so for every page -->
   <!-- <include src="./partials/example.html"></include> -->
-  <header>
-
+  <header class="header">
+    <div class="header__body">
+      <form class="search__form" id="search-form">
+        <input class="search__field" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button class="search__btn" type="submit">Search</button>
+      </form>
+    </div>
   </header>
   <main>
-
-
-    <section class=''>
-      <form class="search-form" id="search-form">
-        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-        <button type="submit">Search</button>
-      </form>
-
-      <div class="gallery">
-        <!-- Картки зображень -->
+    <section class="search__section _section ">
+      <div class="_container">
+        <ul class="gallery">
+          <!-- Картки зображень -->
+        </ul>
       </div>
       <div class='guard'></div>
     </section>
-    <button type='button' class='__btn'>qqqqqqq</button>
   </main>
   <footer>footer</footer>
   <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
